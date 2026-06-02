@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Shade</string>
+    <string name="login">Giriş Yap</string>
+    <string name="register">Kayıt Ol</string>
+    <string name="shade_id">Shade Kimliği (ID)</string>
+    <string name="mnemonic_label">12 Kelimelik Mnemonic</string>
+    <string name="mnemonic_placeholder">Kelimeler arasında boşluk bırakın</string>
+    <string name="register_notice">Hesabınız oluşturulduğunda, sizin için özel güvenlik anahtarları türetilecektir</string>
+    <string name="register_safely">Güvenle Kayıt Ol</string>
+    <string name="no_account_register">Hesabınız yok mu? Kayıt olun</string>
+    <string name="already_have_account_login">Zaten bir hesabınız var mı? Giriş yapın</string>
+    <string name="save_mnemonic_warning">LÜTFEN BU KELİMELERİ KAYDEDİN! Eğer kaybederseniz, hesabınıza bir daha erişemezsiniz</string>
+    <string name="copy_mnemonic">Mnemonic\'i Panoya Kopyala</string>
+    <string name="welcome_title">Shade\'e Hoş Geldiniz</string>
+    <string name="welcome_subtitle">Güvenli ve Gizli Mesajlaşma</string>
+    <string name="back_to_welcome">Geri Dön</string>
+</resources>

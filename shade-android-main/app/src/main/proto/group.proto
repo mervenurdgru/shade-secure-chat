@@ -1,0 +1,53 @@
+syntax = "proto3";
+
+package pb;
+
+option java_multiple_files = true;
+option java_package = "com.shade.app.proto";
+
+// Group control: Sender Key Distribution Message (SKDM).
+// Routed PAIRWISE via shade.user (routing_key = recipient_user_id).
+// `encrypted_skdm` is an X25519+AEAD blob the server cannot read.
+// Server rejects the message if `sender_user_id` / `sender_device_id` do not
+// match the WS session identity.
+message GroupKeyDistribution {
+  string group_id            = 1;
+  string sender_user_id      = 2;
+  string sender_device_id    = 3;
+  string recipient_user_id   = 4;
+  string recipient_device_id = 5;
+
+  // proto-encoded SenderKeyDistribution (see SenderKeyDistribution below).
+  bytes  encrypted_skdm      = 6;
+  bytes  nonce               = 7;
+}
+
+// Plaintext payload inside GroupKeyDistribution.encrypted_skdm.
+// Encrypted with X25519 ECDH (sender_device.x25519 × recipient_device.x25519)
+// → HKDF → ChaCha20-Poly1305.
+message SenderKeyDistribution {
+  string group_id           = 1;
+  string sender_user_id     = 2;
+  string sender_device_id   = 3;
+  uint32 key_id             = 4;
+  bytes  chain_key          = 5; // 32 bytes
+  bytes  signing_public_key = 6; // Ed25519 public key (32 bytes)
+  uint64 chain_index        = 7; // where the recipient should start ratcheting
+}
+
+// Group control: Membership event.
+// Published by the SERVER ONLY — clients must never publish this.
+// Fan-out via shade.group → all currently-bound member device queues.
+message GroupMembershipEvent {
+  enum Kind {
+    JOINED  = 0;
+    LEFT    = 1;
+    REMOVED = 2;
+  }
+
+  string group_id   = 1;
+  Kind   kind       = 2;
+  string actor_id   = 3;  // who performed the action
+  string subject_id = 4;  // who is being added / removed
+  int64  timestamp  = 5;  // Unix ms
+}

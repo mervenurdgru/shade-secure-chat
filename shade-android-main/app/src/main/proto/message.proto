@@ -1,0 +1,63 @@
+syntax = "proto3";
+
+// Backend wire schema (package "pb"). Generated Java/Kotlin classes are placed
+// under the legacy "com.shade.app.proto" package so existing imports keep
+// compiling without a global rename.
+package pb;
+
+option java_multiple_files = true;
+option java_package = "com.shade.app.proto";
+
+// MessageType values 0..1 are server-known (per API contract).
+// Values 2..5 are Android-only extensions used for local 1-to-1 features
+// (edit / delete-for-everyone / audio / file). The backend treats them as
+// opaque int values; both Android clients agree on them.
+enum MessageType {
+  TEXT   = 0;
+  IMAGE  = 1;
+  DELETE = 2; // Android-only: delete-for-everyone marker
+  EDIT   = 3; // Android-only: edit-message marker
+  AUDIO  = 4; // Android-only: voice message
+  FILE   = 5; // Android-only: arbitrary file
+}
+
+enum ReceiptStatus {
+  DELIVERED = 0;
+  READ      = 1;
+}
+
+message EncryptedPayload {
+  string      message_id        = 1;  // UUID
+  string      sender_id         = 2;  // UUID
+  string      sender_shade_id   = 3;  // CoreGuard ID
+
+  // 1-to-1 only — empty for group messages.
+  string      receiver_id       = 4;
+
+  // Encrypted payload (1-to-1: X25519+AEAD; group: Sender Key AEAD).
+  bytes       ciphertext        = 5;
+  bytes       nonce             = 6;
+  bytes       auth_tag          = 7;
+
+  int64       timestamp         = 8;  // Unix ms
+  MessageType type              = 9;
+
+  // Group-only (Sender Keys). Empty for 1-to-1.
+  string      group_id          = 10; // UUID
+  string      sender_device_id  = 11; // UUID — sending device; echo skip + sender-key routing
+  uint32      sender_key_id     = 12; // bumps on every sender-key rotation
+  uint64      chain_index       = 13; // ratchet index in the current chain
+  bytes       signature         = 14; // Ed25519(ciphertext || nonce || group_id || sender_key_id || chain_index)
+}
+
+message DeliveryReceipt {
+  string        message_id      = 1;  // UUID being acked
+  string        sender_id       = 2;  // UUID of the user emitting this receipt
+  string        sender_shade_id = 3;
+  string        receiver_id     = 4;  // UUID of the user who should get this receipt
+  ReceiptStatus status          = 5;
+  int64         timestamp       = 6;  // Unix ms
+
+  // Set when the receipt refers to a group message; empty for 1-to-1.
+  string        group_id        = 7;
+}

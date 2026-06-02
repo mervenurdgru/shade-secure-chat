@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- White silhouette for status bar / foreground service (system applies tint) -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="256"
+    android:viewportHeight="256">
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M128,20 L210,60 V120 C210,180 170,220 128,236 C86,220 46,180 46,120 V60 Z"/>
+    <path
+        android:fillColor="#FFFFFFFF"
+        android:pathData="M60,160 L40,200 L90,175 Z"/>
+</vector>

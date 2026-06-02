@@ -1,0 +1,137 @@
+<resources>
+    <string name="app_name">Shade</string>
+    <string name="login">Giriş Yap</string>
+    <string name="register">Kayıt Ol</string>
+    <string name="shade_id">Shade Kimliği (ID)</string>
+    <string name="mnemonic_label">12 Kelimelik Mnemonic</string>
+    <string name="mnemonic_placeholder">Kelimeler arasında boşluk bırakın</string>
+    <string name="register_notice">Hesabınız oluşturulduğunda, sizin için özel güvenlik anahtarları üretilecektir.</string>
+    <string name="register_safely">Güvenle Kayıt Ol</string>
+    <string name="no_account_register">Hesabınız yok mu? Kayıt olun</string>
+    <string name="already_have_account_login">Zaten bir hesabınız var mı? Giriş yapın</string>
+    <string name="save_mnemonic_warning">LÜTFEN BU KELİMELERİ KAYDEDİN! Eğer kaybederseniz, hesabınıza bir daha erişemezsiniz.</string>
+    <string name="copy_mnemonic">Mnemonic\'i Panoya Kopyala</string>
+    <string name="welcome_title">Shade\'e Hoş Geldiniz</string>
+    <string name="welcome_subtitle">Güvenli ve Gizli Mesajlaşma</string>
+    <string name="mnemonic_copied">Mnemonic panoya kopyalandı</string>
+    <string name="account_created">Hesabınız başarıyla oluşturuldu</string>
+    <string name="login_successful">Tekrar hoşgeldiniz! Giriş başarılı</string>
+    <string name="something_went_wrong">Bir şeyler ters gitti! Lütfen daha sonra tekrar deneyiniz</string>
+    <string name="welcome_greeting">Shade\'e Hoşgeldiniz</string>
+    <string name="privacy_motto">Shade maksimum gizlilik için var.</string>
+    <string name="no_personal_data">E-posta yok. Telefon numarası yok.</string>
+    <string name="free_anonymous">Hesap oluşturmak tamamen ücretsiz ve anonim.</string>
+    <string name="id_copied">Shade Kimliği panoya kopyalandı</string>
+    <string name="unknown_user">Bilinmeyen Kullanıcı</string>
+    <string name="unread_messages">Okunmamış Mesajlar</string>
+    <string name="user_not_found">Kullanıcı Bulunamadı</string>
+    <string name="connect_with_web">Shade Web ile bağlan</string>
+    <string name="scan_qr_web">Web sayfasında gördüğün QR kodu okut</string>
+    <string name="scan_qr">QR kodu tara</string>
+    <string name="pair_web">Web ile eşleştir</string>
+    <string name="authenticating">Yetkilendiriliyor</string>
+    <string name="server_secure_session">Sunucu güvenli oturumu doğruluyor…</string>
+    <string name="connection_establishing">Bağlantı kuruluyor…</string>
+    <string name="sync_with_web">Web ile güvenli kanal kuruluyor…</string>
+    <string name="web_pairing_sending_batches">Şifreli mesaj paketleri gönderiliyor…</string>
+    <string name="web_pairing_sending_batches_sub">İlk senkronu canlı bağlantı üzerinden tamamlıyoruz…</string>
+    <string name="pairing_sync_interrupted">Senkron tamamlanmadan bağlantı kesildi.</string>
+    <string name="pairing_sync_ack_timeout">Web tarafı senkronu zamanında onaylamadı.</string>
+    <string name="sync_ok">Senkron hazır</string>
+    <string name="sync_warning">Senkronizayon bağlantısını kestiğinde senkronizasyon durur. Eğer işlem tamamlanmadan sonlandırılırsa bazı mesajlar web oturumunda görünmeyebilir.</string>
+    <string name="phone_web_sync">Bu telefon ve web oturumu senkron</string>
+    <string name="connection_ten_min">Bağlantı 10 dakika içerisinde otomatik olarak sonlanacaktır.</string>
+    <string name="sync_interrupt">Senkronizasyonu durdur</string>
+    <string name="sync_stops">Anlık senkronizasyon durur; tarayıcı oturumu kapanmaz</string>
+    <string name="error_occurred">Bir hata oluştu</string>
+    <string name="try_again">Tekrar dene</string>
+    <string name="pairing_cancel">İptal et</string>
+    <string name="home_empty_title">Henüz sohbet yok</string>
+    <string name="home_empty_subtitle">Gizli bir konuşma başlatmak için kişilerinden birini seç.</string>
+    <string name="home_inbox_title">Sohbetler</string>
+    <string name="home_last_message_placeholder">Henüz mesaj yok</string>
+    <string name="settings">Ayarlar</string>
+    <string name="new_chat">Yeni sohbet</string>
+    <string name="theme_section_title">Görünüm</string>
+    <string name="theme_system">Sistem</string>
+    <string name="theme_light">Açık</string>
+    <string name="theme_dark">Koyu</string>
+    <string name="theme_system_subtitle">Telefonun açık/koyu ayarına uy</string>
+    <string name="theme_light_subtitle">Her zaman açık renkler</string>
+    <string name="theme_dark_subtitle">Her zaman koyu renkler</string>
+    <string name="message_menu_translate">Çevir</string>
+    <string name="message_menu_translate_subtitle">Metin harici çeviri hizmetine gönderilir</string>
+    <string name="translate_pick_language">Dil seçin</string>
+    <string name="translate_cancel">İptal</string>
+    <string name="translation_disclaimer_title">Çeviri uyarısı</string>
+    <string name="translation_disclaimer_body">Mesajı çevirmek için metin, harici çeviri hizmetlerine (üçüncül hizmet sağlayıcılar) gönderilir. Bunu kabul ediyorsanız devam edin.</string>
+    <string name="translation_disclaimer_continue">Devam et</string>
+    <string name="translation_disclaimer_cancel">Vazgeç</string>
+
+    <!-- Hesap kurtarma -->
+    <string name="recover_account">Hesabı Kurtar</string>
+    <string name="recovery_title">Hesabını Geri Yükle</string>
+    <string name="recovery_description">Hesabına erişimi geri kazanmak için Shade Kimliğini ve 12 kelimelik kurtarma ifadeni gir.</string>
+    <string name="recover_button">Erişimi Geri Yükle</string>
+
+    <!-- Grup sohbet -->
+    <string name="create_group_title">Yeni Grup</string>
+    <string name="create_group_action">Oluştur</string>
+    <string name="group_name_hint">Grup adı</string>
+    <string name="group_member_user_id_hint">Üye ekle (kullanıcı ID)</string>
+    <string name="group_members_header">Üyeler</string>
+    <string name="new_group">Yeni grup</string>
+    <string name="invite_link_copied">Davet bağlantısı panoya kopyalandı</string>
+    <string name="redeem_invite_hint">Davet kodu girin</string>
+    <string name="redeem_invite_action">Kullan</string>
+
+    <!-- Ayarlar kalemleri -->
+    <string name="settings_profile">Profil</string>
+    <string name="settings_profile_subtitle">Profil bilgilerini yönet</string>
+    <string name="settings_contacts">Kişiler</string>
+    <string name="settings_contacts_subtitle">Kişilerini yönet ve yeni ekle</string>
+    <string name="settings_security_audit">Güvenlik Günlüğü</string>
+    <string name="settings_security_audit_subtitle">Hesap etkinliklerini görüntüle</string>
+    <string name="settings_web_connect">Web\'e Bağlan</string>
+    <string name="settings_web_connect_subtitle">Web\'deki QR kodu tara</string>
+    <string name="settings_logout">Çıkış Yap</string>
+    <string name="settings_logout_subtitle">Hesabından güvenli bir şekilde çık</string>
+    <string name="settings_language">Dil</string>
+    <string name="settings_language_subtitle">Uygulama görüntüleme dili</string>
+    <string name="lang_english">English</string>
+    <string name="lang_turkish">Türkçe</string>
+
+    <!-- Bildirim stringleri -->
+    <string name="notification_more_messages">+%d daha fazla mesaj</string>
+    <string name="notification_summary">%1$d sohbetten %2$d mesaj</string>
+
+    <!-- Auth ekranı sabit etiketler -->
+    <string name="end_to_end_encrypted">Uçtan Uca Şifreli</string>
+    <string name="app_tagline">Gizli. Şifreli. Anonim.</string>
+    <string name="login_subtitle">Shade Kimliğinizle giriş yapın</string>
+    <string name="mnemonic_hint">12 kelimelik kurtarma ifadenizi boşluklarla ayırarak girin</string>
+    <string name="recovery_mnemonic_hint">12 kelimenin tamamını doğru sırayla girin</string>
+
+    <!-- Güvenlik bildirimi (kayıt ekranı) -->
+    <string name="security_notice_title">Güvenlik Bildirimi</string>
+    <string name="security_notice_body">Hesabım oluşturulduğunda kendime özel şifreleme anahtarları üretilecek. Bu anahtarlar yalnızca bende saklanır; kaybolmaları durumunda hesabıma bir daha erişemem. Bunu anlıyor ve kabul ediyorum.</string>
+    <string name="security_notice_hint">Devam etmek için güvenlik bildirimini onaylayın</string>
+
+    <!-- Güvenlik denetim ekranı -->
+    <string name="audit_screen_title">Hesap Etkinliği</string>
+    <string name="audit_info_text">Bu ekran hesabınla ilgili son 50 güvenlik olayını gösterir. Tanımadığın bir olay görürsen hesabını incele.</string>
+    <string name="audit_retry">Tekrar Dene</string>
+    <string name="audit_empty">Henüz kayıt yok.</string>
+    <string name="audit_registered">Kayıt tamamlandı</string>
+    <string name="audit_login_success">Giriş doğrulandı</string>
+    <string name="audit_login_failed_expired_challenge">Giriş başarısız: doğrulama oturumu yok veya süresi doldu</string>
+    <string name="audit_login_failed_invalid_challenge">Giriş başarısız: doğrulama kodu eşleşmedi</string>
+    <string name="audit_login_failed_account_missing">Giriş başarısız: hesap bulunamadı</string>
+    <string name="audit_login_failed_invalid_signature">Giriş başarısız: imza doğrulanamadı</string>
+    <string name="audit_login_failed_invalid_device_id">Giriş başarısız: cihaz kimliği geçersiz</string>
+    <string name="audit_login_failed_unknown_device">Giriş başarısız: bu cihaz hesaba tanımlı değil</string>
+    <string name="audit_login_failed_device_lookup">Giriş başarısız: cihaz bilgisi alınamadı</string>
+    <string name="audit_login_failed_device_update">Giriş başarısız: cihaz güncellenemedi</string>
+    <string name="audit_login_failed_device_create">Giriş başarısız: cihaz kaydedilemedi</string>
+    <string name="audit_login_failed_token_issue">Giriş başarısız: oturum oluşturulamadı</string>
+</resources>

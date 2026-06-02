@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="256"
+    android:viewportHeight="256">
+
+    <!-- Inset + scale: launcher masks clip outer ~18%; keeps shield tip + bubble tail inside -->
+    <group
+        android:pivotX="128"
+        android:pivotY="128"
+        android:scaleX="0.60"
+        android:scaleY="0.60">
+
+        <!-- Shield only (separate from tail — merged path uses non-zero winding and draws a “hole” over overlap) -->
+        <path
+            android:pathData="M128,20 L210,60 V120 C210,180 170,220 128,236 C86,220 46,180 46,120 V60 Z">
+            <aapt:attr name="android:fillColor">
+                <gradient
+                    android:startX="0"
+                    android:startY="0"
+                    android:endX="256"
+                    android:endY="256"
+                    android:type="linear">
+                    <item android:offset="0" android:color="#FFA855F7"/>
+                    <item android:offset="1" android:color="#FF6D28D9"/>
+                </gradient>
+            </aapt:attr>
+        </path>
+
+        <!-- Chat bubble tail -->
+        <path
+            android:pathData="M60,160 L40,200 L90,175 Z">
+            <aapt:attr name="android:fillColor">
+                <gradient
+                    android:startX="0"
+                    android:startY="0"
+                    android:endX="256"
+                    android:endY="256"
+                    android:type="linear">
+                    <item android:offset="0" android:color="#FFA855F7"/>
+                    <item android:offset="1" android:color="#FF6D28D9"/>
+                </gradient>
+            </aapt:attr>
+        </path>
+
+        <!-- Keyhole circle -->
+        <path
+            android:fillColor="#FF0B0B0F"
+            android:pathData="M128,110m-18,0a18,18 0,1 1,36 0a18,18 0,1 1,-36 0"/>
+
+        <!-- Keyhole stem: 16x40, rx=8 -->
+        <path
+            android:fillColor="#FF0B0B0F"
+            android:pathData="M120,118 A8,8 0 0 1 128,110 A8,8 0 0 1 136,118 L136,142 A8,8 0 0 1 128,150 A8,8 0 0 1 120,142 L120,118 Z"/>
+    </group>
+</vector>

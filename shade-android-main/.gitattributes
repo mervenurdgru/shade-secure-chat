@@ -1,0 +1,5 @@
+*.rs linguist-detectable=true
+*.rs linguist-language=Rust
+app/rust/shade-crypto/** linguist-detectable
+app/rust/shade-crypto/** linguist-documentation=false
+app/rust/shade-crypto/** linguist-vendored=false

@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package pb;
+
+option java_multiple_files = true;
+option java_package = "com.shade.app.proto";
+
+import "message.proto";
+import "group.proto";
+
+message MessageAck {
+  string message_id = 1;
+}
+
+message WebSocketMessage {
+  oneof content {
+    EncryptedPayload     payload = 1;
+    DeliveryReceipt      receipt = 2;
+    MessageAck           ack     = 3;
+    GroupKeyDistribution gkd     = 4;  // SKDM (client ↔ client, pairwise)
+    GroupMembershipEvent gme     = 5;  // server → client only
+  }
+}

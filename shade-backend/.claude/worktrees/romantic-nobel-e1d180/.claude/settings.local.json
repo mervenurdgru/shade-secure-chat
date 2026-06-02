@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir \"C:\\\\Users\\\\kubil\\\\OneDrive\\\\Desktop\\\\merve\\\\SON DÜZLÜK\\\\özelkonular2\\\\cv-matching\" /s /b)",
+      "Bash(pandoc \"C:\\\\Users\\\\kubil\\\\OneDrive\\\\Desktop\\\\merve\\\\SON DÜZLÜK\\\\özelkonular2\\\\FINAL_RAPOR.docx\" -o /tmp/final_rapor.md)",
+      "Read(//tmp/**)",
+      "Bash(python3 -c ' *)",
+      "Bash(python main.py --method word2vec --n_resumes 50 --n_jobs 200)",
+      "Bash(python main.py --method word2vec --n_resumes 20 --n_jobs 50)",
+      "Bash(python main.py --method tfidf --n_resumes 10 --n_jobs 30)",
+      "Read(//c/Users/kubil/OneDrive/Desktop/merve/SON DÜZLÜK/özelkonular2/**)",
+      "Bash(python \"C:\\\\Users\\\\kubil\\\\AppData\\\\Roaming\\\\Claude\\\\local-agent-mode-sessions\\\\skills-plugin\\\\7549ecf4-8360-467f-9b46-f365cb5f3a5a\\\\00c90d56-c7d3-40e2-983a-d092668c7256\\\\skills\\\\docx\\\\scripts\\\\office\\\\unpack.py\" FINAL_RAPOR.docx unpacked_rapor/)",
+      "Bash(python \"C:\\\\Users\\\\kubil\\\\AppData\\\\Roaming\\\\Claude\\\\local-agent-mode-sessions\\\\skills-plugin\\\\7549ecf4-8360-467f-9b46-f365cb5f3a5a\\\\6a64eed2-596d-4a10-a8d4-340b46023259\\\\skills\\\\docx\\\\scripts\\\\office\\\\unpack.py\" FINAL_RAPOR.docx unpacked_rapor/)",
+      "Bash(python -c ' *)",
+      "Bash(npm list *)",
+      "Bash(npm install *)",
+      "Bash(node sunum.js)",
+      "Bash(python \"C:\\\\Users\\\\kubil\\\\AppData\\\\Roaming\\\\Claude\\\\local-agent-mode-sessions\\\\skills-plugin\\\\7549ecf4-8360-467f-9b46-f365cb5f3a5a\\\\00c90d56-c7d3-40e2-983a-d092668c7256\\\\skills\\\\pptx\\\\scripts\\\\office\\\\soffice.py\" --headless --convert-to pdf \"BLM4514-19040119-MerveNur-Dogru-Sunum.pptx\")",
+      "Bash(python \"C:\\\\Users\\\\kubil\\\\AppData\\\\Roaming\\\\Claude\\\\local-agent-mode-sessions\\\\skills-plugin\\\\7549ecf4-8360-467f-9b46-f365cb5f3a5a\\\\6a64eed2-596d-4a10-a8d4-340b46023259\\\\skills\\\\pptx\\\\scripts\\\\office\\\\soffice.py\" --headless --convert-to pdf \"BLM4514-19040119-MerveNur-Dogru-Sunum.pptx\")",
+      "Bash(python \"C:\\\\Users\\\\kubil\\\\AppData\\\\Roaming\\\\Claude\\\\local-agent-mode-sessions\\\\skills-plugin\\\\52e410c4-4801-4b5d-8c89-285b9d27c1d9\\\\6a64eed2-596d-4a10-a8d4-340b46023259\\\\skills\\\\pptx\\\\scripts\\\\office\\\\soffice.py\" --headless --convert-to pdf \"C:\\\\Users\\\\kubil\\\\OneDrive\\\\Desktop\\\\merve\\\\SON DÜZLÜK\\\\özelkonular2\\\\BLM4514-19040119-MerveNur-Dogru-Sunum.pptx\")",
+      "Bash(python -m markitdown \"BLM4514-19040119-MerveNur-Dogru-Sunum.pptx\")",
+      "Bash(pip install *)"
+    ]
+  }
+}

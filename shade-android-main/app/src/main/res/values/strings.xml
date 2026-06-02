@@ -1,0 +1,137 @@
+<resources>
+    <string name="app_name">Shade</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="shade_id">Shade ID</string>
+    <string name="mnemonic_label">12 Words Mnemonic</string>
+    <string name="mnemonic_placeholder">Left spaces between words</string>
+    <string name="register_notice">When your account is created, special security keys will be generated for you.</string>
+    <string name="register_safely">Register Safely</string>
+    <string name="no_account_register">Don\'t you have an account? Register</string>
+    <string name="already_have_account_login">Already have an account? Login</string>
+    <string name="save_mnemonic_warning">PLEASE SAVE THESE WORDS! If you lose them, you cannot access your account.</string>
+    <string name="copy_mnemonic">Copy Mnemonic to Clipboard</string>
+    <string name="welcome_title">Welcome to Shade</string>
+    <string name="welcome_subtitle">Secure and Private Messaging</string>
+    <string name="mnemonic_copied">Mnemonic copied to clipboard</string>
+    <string name="account_created">Your account created successfully</string>
+    <string name="login_successful">Welcome back! Login successful</string>
+    <string name="something_went_wrong">Something went wrong! Please try again later</string>
+    <string name="welcome_greeting">Welcome to the Shade</string>
+    <string name="privacy_motto">Shade exists for maximum privacy.</string>
+    <string name="no_personal_data">No e-mail. No phone number.</string>
+    <string name="free_anonymous">Creating account is free and anonymous.</string>
+    <string name="id_copied">Shade ID copied to clipboard</string>
+    <string name="unknown_user">Unknown User</string>
+    <string name="unread_messages">Unread Messages</string>
+    <string name="user_not_found">User Not Found</string>
+    <string name="connect_with_web">Connect with Shade Web</string>
+    <string name="scan_qr_web">Scan the QR code on the website</string>
+    <string name="scan_qr">Scan the QR code</string>
+    <string name="pair_web">Pair with web</string>
+    <string name="authenticating">Authenticating</string>
+    <string name="server_secure_session">Server is verifying the secure session…</string>
+    <string name="connection_establishing">Connection establishing…</string>
+    <string name="sync_with_web">Opening secure channel to web…</string>
+    <string name="web_pairing_sending_batches">Sending encrypted batches…</string>
+    <string name="web_pairing_sending_batches_sub">Finishing first sync over the live connection…</string>
+    <string name="pairing_sync_interrupted">Connection closed before sync finished.</string>
+    <string name="pairing_sync_ack_timeout">Web client did not confirm sync in time.</string>
+    <string name="sync_ok">Sync ready</string>
+    <string name="sync_warning">Synchronization stops when the synchronization connection is interrupted. If the process is terminated before completion, some messages may not appear in the web session.</string>
+    <string name="phone_web_sync">This phone and web session are sync</string>
+    <string name="sync_interrupt">Close the connection</string>
+    <string name="connection_ten_min">The connection will close automatically in 10 minutes</string>
+    <string name="sync_stops">Online synchronization stops; web session stays</string>
+    <string name="error_occurred">An error occurred</string>
+    <string name="try_again">Try again</string>
+    <string name="pairing_cancel">Cancel</string>
+    <string name="home_empty_title">No chats yet</string>
+    <string name="home_empty_subtitle">Pick someone from your contacts to start a private conversation.</string>
+    <string name="home_inbox_title">Chats</string>
+    <string name="home_last_message_placeholder">No messages yet</string>
+    <string name="settings">Settings</string>
+    <string name="new_chat">New chat</string>
+    <string name="theme_section_title">Appearance</string>
+    <string name="theme_system">System</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+    <string name="theme_system_subtitle">Follow your device light/dark setting</string>
+    <string name="theme_light_subtitle">Always use light colors</string>
+    <string name="theme_dark_subtitle">Always use dark colors</string>
+    <string name="message_menu_translate">Translate</string>
+    <string name="message_menu_translate_subtitle">Send message text to an external service</string>
+    <string name="translate_pick_language">Choose language</string>
+    <string name="translate_cancel">Cancel</string>
+    <string name="translation_disclaimer_title">Translation notice</string>
+    <string name="translation_disclaimer_body">To translate a message, its text is sent to external translation services (third-party providers). Only continue if you accept this.</string>
+    <string name="translation_disclaimer_continue">Continue</string>
+    <string name="translation_disclaimer_cancel">Cancel</string>
+
+    <!-- Account recovery -->
+    <string name="recover_account">Recover Account</string>
+    <string name="recovery_title">Restore Your Account</string>
+    <string name="recovery_description">Enter your Shade ID and 12-word recovery phrase to restore access to your account.</string>
+    <string name="recover_button">Restore Access</string>
+
+    <!-- Group chat -->
+    <string name="create_group_title">New Group</string>
+    <string name="create_group_action">Create</string>
+    <string name="group_name_hint">Group name</string>
+    <string name="group_member_user_id_hint">Add member (user ID)</string>
+    <string name="group_members_header">Members</string>
+    <string name="new_group">New group</string>
+    <string name="invite_link_copied">Invite link copied to clipboard</string>
+    <string name="redeem_invite_hint">Enter invite code</string>
+    <string name="redeem_invite_action">Redeem</string>
+
+    <!-- Settings items -->
+    <string name="settings_profile">Profile</string>
+    <string name="settings_profile_subtitle">Manage your profile information</string>
+    <string name="settings_contacts">Contacts</string>
+    <string name="settings_contacts_subtitle">Manage and add contacts</string>
+    <string name="settings_security_audit">Security Audit</string>
+    <string name="settings_security_audit_subtitle">View account activities</string>
+    <string name="settings_web_connect">Connect to Web</string>
+    <string name="settings_web_connect_subtitle">Scan the QR code on the website</string>
+    <string name="settings_logout">Log Out</string>
+    <string name="settings_logout_subtitle">Sign out of your account safely</string>
+    <string name="settings_language">Language</string>
+    <string name="settings_language_subtitle">App display language</string>
+    <string name="lang_english">English</string>
+    <string name="lang_turkish">Türkçe</string>
+
+    <!-- Notification strings (format args) -->
+    <string name="notification_more_messages">+%d more messages</string>
+    <string name="notification_summary">%1$d chats, %2$d messages</string>
+
+    <!-- Auth screen inline labels -->
+    <string name="end_to_end_encrypted">End-to-End Encrypted</string>
+    <string name="app_tagline">Private. Encrypted. Anonymous.</string>
+    <string name="login_subtitle">Sign in with your Shade ID</string>
+    <string name="mnemonic_hint">Enter your 12-word recovery phrase separated by spaces</string>
+    <string name="recovery_mnemonic_hint">Enter all 12 words in the correct order</string>
+
+    <!-- Security notice (registration) -->
+    <string name="security_notice_title">Security Notice</string>
+    <string name="security_notice_body">When my account is created, unique encryption keys will be generated for me. These keys are stored only on my device; if I lose them, I will no longer be able to access my account. I understand and accept this.</string>
+    <string name="security_notice_hint">Confirm the security notice to continue</string>
+
+    <!-- Security audit screen -->
+    <string name="audit_screen_title">Account Activity</string>
+    <string name="audit_info_text">This screen shows the last 50 security events on your account. If you see an unfamiliar event, review your account.</string>
+    <string name="audit_retry">Retry</string>
+    <string name="audit_empty">No records yet.</string>
+    <string name="audit_registered">Registration completed</string>
+    <string name="audit_login_success">Login verified</string>
+    <string name="audit_login_failed_expired_challenge">Login failed: session missing or expired</string>
+    <string name="audit_login_failed_invalid_challenge">Login failed: verification code mismatch</string>
+    <string name="audit_login_failed_account_missing">Login failed: account not found</string>
+    <string name="audit_login_failed_invalid_signature">Login failed: signature verification failed</string>
+    <string name="audit_login_failed_invalid_device_id">Login failed: device ID invalid</string>
+    <string name="audit_login_failed_unknown_device">Login failed: device not registered to account</string>
+    <string name="audit_login_failed_device_lookup">Login failed: could not retrieve device info</string>
+    <string name="audit_login_failed_device_update">Login failed: device could not be updated</string>
+    <string name="audit_login_failed_device_create">Login failed: device could not be registered</string>
+    <string name="audit_login_failed_token_issue">Login failed: session could not be created</string>
+</resources>
