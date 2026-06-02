@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/Users/kubil/**)",
+      "Read(//c/Users/kubil/OneDrive/Desktop/**)"
+    ]
+  }
+}
